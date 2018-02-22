@@ -6,7 +6,7 @@ const cuid = require('cuid');
 const swaggerUi = require('swagger-ui-express');
 const { Validator, ValidationError } = require('express-json-validator-middleware');
 
-const todoSchema = require('./todo-schema.json');
+const todoSchema = require('./schemas/todo-schema.json');
 const swaggerDoc = require('../dist/swagger.json');
 
 const validator = new Validator({ allErrors: true });

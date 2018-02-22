@@ -8,7 +8,8 @@
     "prestart": "run-s clean swagger",
     "dev": "nodemon --exec \"npm start\" --watch ./swagger.json --watch ./src",
     "clean": "rimraf dist && mkdir dist",
-    "swagger": "json-refs resolve ./src/swagger.json > ./dist/swagger.json"
+    "swagger": "json-refs resolve ./src/swagger.json > ./dist/swagger.json",
+    "types": "node ./bin/jsonToTs"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "express": "^4.16.2",
     "express-json-validator-middleware": "^1.2.1",
     "json-refs": "^3.0.4",
+    "json-schema-to-typescript": "^5.3.3",
     "npm-run-all": "^4.1.2",
     "rimraf": "^2.6.2",
     "swagger-jsdoc": "^1.9.7",

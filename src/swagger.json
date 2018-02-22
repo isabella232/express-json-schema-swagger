@@ -24,7 +24,7 @@
   },
   "definitions": {
     "todo": {
-      "$ref": "./todo-schema.json"
+      "$ref": "./schemas/todo-schema.json"
     }
   }
 }
