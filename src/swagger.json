@@ -1,0 +1,30 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Simple Todos API"
+  },
+  "paths": {
+    "/todos": {
+      "post": {
+        "summary": "Create a new todo item",
+        "responses": {
+          "200": {
+            "description": "Creation successful",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/definitions/todo"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "todo": {
+      "$ref": "./todo-schema.json"
+    }
+  }
+}

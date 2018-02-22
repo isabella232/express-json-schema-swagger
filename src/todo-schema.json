@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "task": {
+      "type": "string"
+    },
+    "dueAt": {
+      "type": "string"
+    }
+  },
+  "required": ["task"],
+  "additionalProperties": false
+}
